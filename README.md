@@ -46,6 +46,7 @@ Implementación de **patrones de diseño** en Python, sin Lombock y tests:
     ├─ Prototype.pdf
     └─ Singleton.pdf
 
+
     requirements.txt
     README.md
 
