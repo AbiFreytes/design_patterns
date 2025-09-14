@@ -6,7 +6,7 @@ Implementación de **patrones de diseño** en Python, sin Lombock y tests:
 - **Factory Method** — creación polimórfica por jerarquías de creadores
 - **Abstract Factory** — familias de objetos compatibles (UI + Envío)
 - **Builder** — construcción declarativa de objetos inmutables con validación
-- **Prototype** — clonación (deep/shallow) con overrides
+- **Prototype** — clonación
 
 ## 🧱 Estructura del proyecto
     patrones/
@@ -49,4 +49,5 @@ Implementación de **patrones de diseño** en Python, sin Lombock y tests:
 
     requirements.txt
     README.md
+
 
