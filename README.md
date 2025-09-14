@@ -39,6 +39,13 @@ Implementación de **patrones de diseño** en Python, sin Lombock y tests:
     ├─ test_builder.py
     └─ test_prototype.py
     
+    presentaciones/
+    ├─ Abstract Factory.pdf
+    ├─ Builder.pdf
+    ├─ Factory.pdf
+    ├─ Prototype.pdf
+    └─ Singleton.pdf
+
     requirements.txt
     README.md
 
