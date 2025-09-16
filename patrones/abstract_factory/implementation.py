@@ -8,7 +8,7 @@ from enum import Enum
 # ===================== PRODUCTOS (interfaces) =====================
 
 class InterfazUI(ABC):
-    """Contrato para las UIs según tipo de usuario."""
+    """Interfaz para las UIs según tipo de usuario."""
 
     @abstractmethod
     def nombre(self) -> str: ...
@@ -21,7 +21,7 @@ class InterfazUI(ABC):
 
 
 class MetodoEnvio(ABC):
-    """Contrato para los métodos de envío asociados a cada familia."""
+    """Interfaz para los métodos de envío asociados a cada familia."""
 
     @abstractmethod
     def nombre(self) -> str: ...

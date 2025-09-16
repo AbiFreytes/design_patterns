@@ -34,11 +34,12 @@ def main() -> None:
     # Usuario 2: con teléfono normalizado, dirección y varias preferencias
     u2 = (
         Usuario.builder("juan")
-        .telefono("(11) 5555-1212")
+        .telefono("(261) 5555-1212")
         .direccion("Av. Siempre Viva 742")
         .preferencias({"notificaciones": True, "idioma": "es"})
         .build()
     )
+
 
     mostrar(u1)
     mostrar(u2)
@@ -47,7 +48,7 @@ def main() -> None:
     try:
         setattr(u1, "email", "otro@example.com")
     except FrozenInstanceError:
-        print("\n✔ Inmutabilidad: no se puede modificar un Usuario ya construido.")
+        print("Inmutabilidad: no se puede modificar un Usuario ya construido.")
 
 
 if __name__ == "__main__":

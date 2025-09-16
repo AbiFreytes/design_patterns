@@ -1,10 +1,7 @@
 from __future__ import annotations
 
 from datetime import datetime, timedelta
-
-# Si ejecutás como módulo, este import relativo funciona:
 from .implementation import Libro, Usuario, Prestamo
-# (Si preferís Script path, cambiá por: from patrones.prototype.implementation import Libro, Usuario, Prestamo)
 
 
 def main() -> None:

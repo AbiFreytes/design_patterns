@@ -9,7 +9,7 @@ from typing import Any, Mapping, Dict, Optional
 class Usuario:
     """
     Objeto inmutable construido vía Builder.
-    - `preferencias` se expone como Mapping inmutable (MappingProxyType).
+    - `preferencias` se expone como un mapeo de solo lectura (una vista inmutable) aun cuando internamente se haya construido con un dict mutable durante el armado con el builder.
     """
     username: str
     email: Optional[str] = None

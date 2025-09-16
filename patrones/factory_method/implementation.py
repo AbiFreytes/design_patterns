@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod #abstractmethod marca a Libro como la interfaz del producto del Factory Method y obliga a que los productos concretos implementen la API mínima
 from dataclasses import dataclass
 from enum import Enum
 from typing import Dict, Any
@@ -26,7 +26,7 @@ class Libro(ABC):
 
 
 @dataclass(frozen=True)
-class LibroFisico(Libro):
+class LibroFisico(Libro): #clases concretas
     titulo: str
     autor: str
     peso_kg: float

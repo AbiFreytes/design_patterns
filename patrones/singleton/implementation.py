@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
-from threading import Lock, RLock
+from dataclasses import dataclass #crea automaticamente el __init__
+from threading import Lock, RLock #para sincronización de hilos
 from typing import List
 
 
@@ -23,7 +23,7 @@ class Database:
     _lock: Lock = Lock()  # protege la creación de la instancia
 
     def __new__(cls) -> "Database": #creamos la instancia solo cuando alguien la llama
-        # Lazy initialization con doble chequeo
+        # Lazy initialization con doble chequeo, evitando que dos hilos creen instancias simultaneamente
         if cls._instance is None:
             with cls._lock:
                 if cls._instance is None:
